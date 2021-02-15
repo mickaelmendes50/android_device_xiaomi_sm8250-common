@@ -1,0 +1,14 @@
+wakelock_use(vendor_fod)
+
+# Allow access to the HALs
+allow vendor_fod hal_fingerprint_hwservice_xiaomi:hwservice_manager find;
+allow vendor_fod hal_touchfeature_hwservice_xiaomi:hwservice_manager find;
+
+# Allow binder communication with hal_fingerprint_kona
+binder_call(vendor_fod, hal_fingerprint_default)
+
+# Allow binder communication with hal_touchfeature_default
+binder_call(vendor_fod, hal_touchfeature_default)
+
+allow vendor_fod sysfs_graphics:dir r_dir_perms;
+allow vendor_fod sysfs_graphics:file rw_file_perms;

@@ -1,5 +1,6 @@
 //
 // Copyright (C) 2019-2020 The LineageOS Project
+// Copyright (C) 2021 Paranoid Android
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,11 +15,11 @@
 // limitations under the License.
 
 xiaomi_kona_fod_hal_binary {
-    name: "vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_kona",
+    name: "vendor.aospa.biometrics.fingerprint.inscreen@1.0-service",
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
-    init_rc: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_kona.rc"],
-    vintf_fragments: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_kona.xml"],
+    init_rc: ["vendor.aospa.biometrics.fingerprint.inscreen@1.0-service.rc"],
+    vintf_fragments: ["vendor.aospa.biometrics.fingerprint.inscreen@1.0-service.xml"],
     srcs: ["service.cpp", "FingerprintInscreen.cpp"],
     shared_libs: [
         "libbase",
@@ -27,11 +28,11 @@ xiaomi_kona_fod_hal_binary {
         "libhidlbase",
         "liblog",
         "libutils",
-        "vendor.lineage.biometrics.fingerprint.inscreen@1.0",
+        "vendor.aospa.biometrics.fingerprint.inscreen@1.0",
         "//hardware/xiaomi:vendor.goodix.hardware.biometrics.fingerprint@2.1",
         "//hardware/xiaomi:vendor.xiaomi.hardware.displayfeature@1.0",
         "//hardware/xiaomi:vendor.xiaomi.hardware.fingerprintextension@1.0",
         "//hardware/xiaomi:vendor.xiaomi.hardware.touchfeature@1.0",
     ],
-    proprietary: true,
+    system_ext_specific: true,
 }
