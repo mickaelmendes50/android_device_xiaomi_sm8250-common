@@ -307,6 +307,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libjson
 
+# QTI Common
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
+
 # RIL
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
