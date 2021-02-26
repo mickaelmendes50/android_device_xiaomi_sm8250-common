@@ -236,7 +236,6 @@ PRODUCT_PACKAGES += \
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail \
-    libavservices_minijail.vendor \
     libavservices_minijail_vendor
 
 PRODUCT_COPY_FILES += \
@@ -306,6 +305,7 @@ PRODUCT_PACKAGES += \
 
 # QTI Common
 TARGET_COMMON_QTI_COMPONENTS := \
+    av \
     perf \
     wfd
 
