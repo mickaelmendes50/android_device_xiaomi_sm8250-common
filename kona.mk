@@ -297,21 +297,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
-# QMI
-PRODUCT_PACKAGES += \
-    libjson
-
 # QTI Common
 TARGET_COMMON_QTI_COMPONENTS := \
     av \
     bt \
     perf \
+    telephony \
     wfd
 
 # RIL
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
-    librmnetctl \
     libxml2
 
 # Rootdir
