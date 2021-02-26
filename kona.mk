@@ -160,15 +160,12 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    libdisplayconfig.qti \
     libdisplayconfig.qti.vendor \
-    libqdMetaData \
     libsdmcore \
     libsdmutils \
     libtinyxml \
     libvulkan \
     memtrack.kona \
-    vendor.display.config@1.5 \
     vendor.display.config@1.11.vendor \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor \
@@ -309,7 +306,8 @@ PRODUCT_PACKAGES += \
 
 # QTI Common
 TARGET_COMMON_QTI_COMPONENTS := \
-    perf
+    perf \
+    wfd
 
 # RIL
 PRODUCT_PACKAGES += \
@@ -403,14 +401,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/qca6390/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6390/WCNSS_qcom_cfg.ini \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
-
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libnl \
-    libwfdaac_vendor
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sm8250-common/sm8250-common-vendor.mk)
