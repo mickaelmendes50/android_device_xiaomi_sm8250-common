@@ -299,6 +299,7 @@ PRODUCT_COPY_FILES += \
 TARGET_COMMON_QTI_COMPONENTS := \
     av \
     bt \
+    init \
     perf \
     telephony \
     usb \
@@ -311,33 +312,19 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init.class_main.sh \
-    init.crda.sh \
-    init.mdm.sh \
     init.mi.usb.sh \
-    init.qcom.class_core.sh \
-    init.qcom.coex.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.efs.sync.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.sdio.sh \
     init.qcom.sensors.sh \
-    init.qcom.sh \
     init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
     init.qti.media.sh \
     init.qti.qcv.sh \
-    mishow.sh \
-    qca6234-service.sh
+    mishow.sh
 
 PRODUCT_PACKAGES += \
-    init.qcom.factory.rc \
     init.qcom.power.rc \
-    init.qcom.rc \
     init.target.rc \
     init.target.wigig.rc \
-    fstab.qcom \
-    ueventd.qcom.rc
+    fstab.qcom
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
