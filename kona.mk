@@ -13,7 +13,9 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
+
+PRODUCT_PACKAGES += \
+    WifiResTarget
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -290,6 +292,7 @@ PRODUCT_COPY_FILES += \
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
+    overlay \
     perf \
     telephony
 
@@ -362,7 +365,6 @@ PRODUCT_PACKAGES += \
     libwifi-hal-qcom \
     vendor.qti.hardware.wifi.hostapd@1.2.vendor \
     vendor.qti.hardware.wifi.supplicant@2.1.vendor \
-    WifiResCommon \
     wpa_supplicant \
     wpa_supplicant.conf
 
