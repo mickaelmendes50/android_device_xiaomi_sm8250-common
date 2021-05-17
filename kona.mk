@@ -9,12 +9,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 TARGET_BOARD_PLATFORM := kona
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
-
 PRODUCT_PACKAGES += \
+    MiKonaFrameworks \
+    MiKonaSystemUI \
     WifiResTarget
 
 # Enable updating of APEXes
