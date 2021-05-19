@@ -243,9 +243,5 @@ persist.vendor.sensors.sync_request=true
 # Shutdown
 sys.vendor.shutdown.waittime=500
 
-# USB
-vendor.usb.diag.func.name=diag
-vendor.usb.use_ffs_mtp=0
-
 # WiFi
 wifi.aware.interface=wifi-aware0
