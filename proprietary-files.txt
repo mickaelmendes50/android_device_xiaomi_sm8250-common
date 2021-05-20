@@ -906,11 +906,6 @@ vendor/lib64/liboemcrypto.so
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/libwvhidl.so
 
-# WiFi
-vendor/bin/cnss-daemon
-vendor/etc/wifi/aoa_cldb_falcon.bin
-vendor/etc/wifi/aoa_cldb_swl14.bin
-
 # WiFi Display
 -framework/WfdCommon.jar
 system_ext/bin/wfdservice
