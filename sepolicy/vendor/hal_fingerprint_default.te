@@ -8,6 +8,9 @@ binder_call(hal_fingerprint_default, hal_power_default)
 # Allow binder communication with vendor_hal_perf_default
 binder_call(hal_fingerprint_default, vendor_hal_perf_default)
 
+allow hal_fingerprint_default hal_fingerprint_hwservice_xiaomi:hwservice_manager find;
+add_hwservice(hal_fingerprint_default, hal_fingerprint_hwservice_xiaomi)
+
 allow hal_fingerprint_default fingerprint_data_file:dir rw_dir_perms;
 allow hal_fingerprint_default fingerprint_data_file:file create_file_perms;
 
