@@ -54,9 +54,6 @@ TARGET_USES_GRALLOC4 := true
 TARGET_USES_HWC2 := true
 TARGET_USES_ION := true
 
-# Filesystem
-TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
-
 # Fingerprint
 ifeq ($(TARGET_HAS_FOD),true)
 SOONG_CONFIG_NAMESPACES += XIAOMI_KONA_FOD
