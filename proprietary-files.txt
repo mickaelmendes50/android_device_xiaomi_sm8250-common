@@ -495,6 +495,12 @@ vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 
+# QDMA - LA.UM.9.12.r1-10800-SMxx50.0
+-vendor/app/QCC-TR-UI/QCC-TR-UI.apk
+vendor/bin/qcc-trd
+vendor/etc/init/init.qdmastats.rc
+vendor/lib64/libqdma_file_agent.so
+
 # QMI
 etc/permissions/privapp-permissions-qti.xml
 etc/sysconfig/qti_whitelist.xml
