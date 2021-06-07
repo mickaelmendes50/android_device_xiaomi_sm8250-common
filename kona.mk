@@ -209,6 +209,10 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# QSPM
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.qspm.enable=true
+
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
