@@ -553,6 +553,10 @@ vendor/etc/seccomp_policy/qspm.policy
 vendor/lib64/vendor.qti.qspmhal@1.0.so
 vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
 
+# RemoteFS - LA.UM.9.12.r1-10800-SMxx50.0
+vendor/bin/rmt_storage
+vendor/etc/init/vendor.qti.rmt_storage.rc
+
 # RIL
 -vendor/app/IWlanService/IWlanService.apk
 vendor/bin/hw/qcrild
