@@ -396,6 +396,12 @@ vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 
+# MDM - LA.UM.9.12.r1-10800-SMxx50.0
+vendor/bin/ks
+vendor/bin/mdm_helper
+vendor/bin/mdm_helper_proxy
+vendor/lib64/libmdmimgload.so
+
 # Media
 vendor/etc/system_properties.xml
 
@@ -562,8 +568,6 @@ vendor/etc/init/vendor.qti.rmt_storage.rc
 vendor/bin/hw/qcrild
 vendor/bin/adpl
 vendor/bin/ATFWD-daemon
-vendor/bin/ks
-vendor/bin/mdm_helper
 vendor/bin/netmgrd
 vendor/bin/port-bridge
 vendor/bin/qrtr-cfg
@@ -590,7 +594,6 @@ vendor/lib64/libconfigdb.so
 vendor/lib64/libhydra_common.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmdmdetect.so
-vendor/lib64/libmdmimgload.so
 vendor/lib64/libminkdescriptor.so
 vendor/lib64/libmodemapi.so
 vendor/lib64/libnetmgr.so
