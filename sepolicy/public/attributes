@@ -1,3 +1,5 @@
+hal_attribute_pa(displayfeature)
+
 hal_attribute_pa(mlipay)
 
 hal_attribute_pa(motor)

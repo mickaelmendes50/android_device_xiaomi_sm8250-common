@@ -17,3 +17,6 @@ allow vendor_fod hal_fingerprint_hwservice_xiaomi:hwservice_manager find;
 binder_call(vendor_fod, hal_touchfeature_default)
 allow vendor_fod hal_touchfeature_hwservice_xiaomi:hwservice_manager find;
 
+# Allow binder communication with hal_displayfeature_default
+binder_call(vendor_fod, hal_displayfeature_default)
+allow vendor_fod hal_displayfeature_hwservice_xiaomi:hwservice_manager find;
