@@ -58,6 +58,10 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(COMMON_PATH)/vintf/xiaomi_vendor_framework_compatibility_matrix.xml
 
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/vintf/manifest.xml
+ifeq ($(TARGET_HAS_FOD),true)
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/vintf/display_feature_manifest.xml
+endif
+
 DEVICE_MATRIX_FILE += device/qcom/common/compatibility_matrix.xml
 
 # Kernel
